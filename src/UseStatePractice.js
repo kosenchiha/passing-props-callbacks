@@ -10,6 +10,11 @@ function UseStatePractice() {
         padding: "5%",
       }}
     >
+      <div style={{ display: "flex" }}>
+        <p>+</p>
+        <p style={{ padding: "0 15px" }}>counter</p>
+        <p>-</p>
+      </div>
       <form>
         <input type="text" placeholder="first name" />
         <p>first name: XXX</p>
