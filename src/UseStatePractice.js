@@ -1,12 +1,6 @@
 import React, { useState } from "react";
 
 function UseStatePractice() {
-  const [isGreeting, setIsGreeting] = useState(false);
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    setIsGreeting(true);
-  };
   return (
     <div
       style={{
@@ -16,9 +10,7 @@ function UseStatePractice() {
         padding: "5%",
       }}
     >
-      {isGreeting && <h2>Hello! Your full name is XXX XXXX, You are X</h2>}
-
-      <form onSubmit={handleSubmit}>
+      <form>
         <input type="text" placeholder="first name" />
         <p>first name: XXX</p>
         <input type="text" placeholder="last name" />
@@ -26,7 +18,6 @@ function UseStatePractice() {
         <input type="text" placeholder="your age" />
         <p>age: XXX</p>
         <br />
-        <button type="submit">Print greeting</button>
       </form>
     </div>
   );
